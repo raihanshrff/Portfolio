@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raihan Shariff I — Software Developer specializing in Django REST Framework, Python, and Full-Stack Web Applications. Based in Tamil Nadu, India." />
+  <meta name="keywords" content="Raihan Shariff, Software Developer, Django, Python, Backend Developer, REST API, Portfolio" />
+  <meta name="author" content="Raihan Shariff I" />
+  <meta property="og:title" content="Raihan Shariff | Software Developer" />
+  <meta property="og:description" content="Full-stack developer skilled in Django, REST APIs, and Python." />
+  <title>Raihan Shariff | Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">RS</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="bracket">&lt;</span>Raihan<span class="bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="resume.png" download class="btn-resume"><i class="fas fa-download"></i> Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"      class="mob-link">About</a></li>
+      <li><a href="#skills"     class="mob-link">Skills</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#projects"   class="mob-link">Projects</a></li>
+      <li><a href="#education"  class="mob-link">Education</a></li>
+      <li><a href="#contact"    class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <canvas id="particleCanvas"></canvas>
+      <div class="hero-inner">
+        <!-- Text -->
+        <div class="hero-text">
+          <p class="hero-greeting">👋 Hi, I'm</p>
+          <h1 class="hero-name">Raihan Shariff</h1>
+          <div class="hero-role-line">
+            <span class="role-prefix">A&nbsp;</span>
+            <span id="typewriter" class="typewriter"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p class="hero-bio">Building robust full-stack web applications with Django REST Framework &amp; REST APIs. Passionate about clean code and backend excellence.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+            <a href="#contact"  class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/raihanshrff"                target="_blank" class="soc-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/raihan-shariff"        target="_blank" class="soc-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:raihanshariffworkspace@gmail.com"                        class="soc-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="hero-photo-wrap">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="photo-circle">
+            <img src="profile.jpg" alt="Raihan Shariff" class="profile-img" />
+          </div>
+          <div class="float-badge b1"><i class="fab fa-python"></i> Python</div>
+          <div class="float-badge b2"><i class="fas fa-server"></i> Django</div>
+          <div class="float-badge b3"><i class="fas fa-plug"></i> REST API</div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="mouse"><div class="wheel"></div></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">Get to Know Me</p>
+          <h2 class="sec-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a <strong>Software Developer</strong> from Tamil Nadu, India, with hands-on experience building and deploying full-stack web applications. I specialize in <strong>Django REST Framework</strong> and <strong>REST APIs</strong>, with a passion for crafting clean, efficient backend systems.</p>
+            <p>During my internship at <strong>Femtosoft Technologies</strong>, I built RESTful APIs, integrated MySQL via Django ORM, and implemented JWT Authentication — all in a real production environment.</p>
+            <p>I'm pursuing my <strong>B.Tech in Computer Science &amp; Engineering</strong> at Dr. M.G.R Educational and Research Institute, always learning and pushing the boundaries of what I build.</p>
+            <p class="about-loc"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+          </div>
+          <div class="stats-grid reveal">
+            <div class="stat-card"><span class="stat-num" data-target="2">0</span><span class="stat-lbl">Projects Built</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="1">0</span><span class="stat-lbl">Internship</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="5">0</span><span class="stat-lbl">Technologies</span></div>
+            <div class="stat-card"><span class="stat-num" data-target="1">0</span><span class="stat-lbl">Certification</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">What I Know</p>
+          <h2 class="sec-title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-cat reveal">
+            <div class="cat-icon"><i class="fab fa-python"></i></div>
+            <h3>Programming</h3>
+            <div class="pills"><span class="pill">Python</span></div>
+          </div>
+          <div class="skill-cat reveal">
+            <div class="cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend &amp; Databases</h3>
+            <div class="pills">
+              <span class="pill">Django</span>
+              <span class="pill">Django REST Framework</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">Django ORM</span>
+              <span class="pill">JWT Auth</span>
+              <span class="pill">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-cat reveal">
+            <div class="cat-icon"><i class="fas fa-code"></i></div>
+            <h3>Frontend</h3>
+            <div class="pills">
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-cat reveal">
+            <div class="cat-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools &amp; Deployment</h3>
+            <div class="pills">
+              <span class="pill">Git</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">Postman</span>
+              <span class="pill">PythonAnywhere</span>
+              <span class="pill">Netlify</span>
+            </div>
+          </div>
+          <div class="skill-cat reveal">
+            <div class="cat-icon"><i class="fas fa-brain"></i></div>
+            <h3>Core Concepts</h3>
+            <div class="pills">
+              <span class="pill">Data Structures &amp; Algorithms</span>
+              <span class="pill">Problem Solving</span>
+              <span class="pill">API Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">Where I've Worked</p>
+          <h2 class="sec-title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3 class="tl-role">Software Developer Intern</h3>
+                  <p class="tl-company"><i class="fas fa-building"></i> Femtosoft Technologies</p>
+                </div>
+                <div class="tl-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Aug 2025 – Oct 2025</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                </div>
+              </div>
+              <ul class="tl-bullets">
+                <li>Developed RESTful APIs using Django for handling user data and backend operations.</li>
+                <li>Integrated MySQL database using Django ORM for efficient data management and retrieval.</li>
+                <li>Tested and debugged API endpoints using Postman to ensure reliability and performance.</li>
+                <li>Worked on frontend components using HTML, CSS, and JavaScript for integrated web features.</li>
+                <li>Gained hands-on experience in real-world application development and system debugging.</li>
+              </ul>
+              <div class="tl-tags">
+                <span class="tag">Django</span>
+                <span class="tag">REST API</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Postman</span>
+                <span class="tag">JWT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">What I've Built</p>
+          <h2 class="sec-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Expense Tracker -->
+          <div class="proj-card reveal">
+            <div class="proj-glow"></div>
+            <div class="proj-content">
+              <div class="proj-top">
+                <div class="proj-icon"><i class="fas fa-wallet"></i></div>
+                <div class="proj-links">
+                  <a href="https://expensetrackerwebapi.netlify.app/" target="_blank" class="plink" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/raihanshrff" target="_blank" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="proj-title">Expense Tracker</h3>
+              <p class="proj-sub">Full-Stack Web Application</p>
+              <p class="proj-desc">A full-stack expense tracking app featuring secure JWT Authentication, complete CRUD operations via REST APIs, dynamic dashboard analytics with Chart.js, and category-wise transaction filtering. Deployed on PythonAnywhere &amp; Netlify.</p>
+              <div class="proj-tech">
+                <span class="tbadge">Django REST</span>
+                <span class="tbadge">JWT Auth</span>
+                <span class="tbadge">Chart.js</span>
+                <span class="tbadge">Fetch API</span>
+                <span class="tbadge">Netlify</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume Builder -->
+          <div class="proj-card reveal">
+            <div class="proj-glow"></div>
+            <div class="proj-content">
+              <div class="proj-top">
+                <div class="proj-icon"><i class="fas fa-file-alt"></i></div>
+                <div class="proj-links">
+                  <a href="https://resume-builder-o850.onrender.com/" target="_blank" class="plink" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/raihanshrff" target="_blank" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="proj-title">Resume Builder</h3>
+              <p class="proj-sub">Full-Stack Web Application</p>
+              <p class="proj-desc">A web app that lets users generate professional resumes from input data. Features a Django backend for processing and storing user information, responsive UI for intuitive data entry, and robust input validation across the full stack.</p>
+              <div class="proj-tech">
+                <span class="tbadge">Django</span>
+                <span class="tbadge">Python</span>
+                <span class="tbadge">HTML/CSS</span>
+                <span class="tbadge">Render</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">My Background</p>
+          <h2 class="sec-title">Education &amp; Certifications</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-body">
+              <div class="edu-top">
+                <div>
+                  <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                  <p class="edu-inst">Dr. M.G.R Educational and Research Institute</p>
+                </div>
+                <div class="edu-right">
+                  <span class="edu-yr">2022 – 2026</span>
+                  <span class="edu-loc"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</span>
+                </div>
+              </div>
+              <div class="gpa-row">
+                <span class="gpa-label">GPA</span>
+                <span class="gpa-val">7.24 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon-wrap"><i class="fas fa-certificate"></i></div>
+            <div class="cert-body">
+              <h3>Software Engineering Virtual Experience</h3>
+              <p class="cert-issuer">JPMorgan Chase &amp; Co. <span class="via">via Forage</span></p>
+              <div class="cert-badge"><i class="fas fa-check-circle"></i> Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label">Let's Talk</p>
+          <h2 class="sec-title">Get In Touch</h2>
+          <p class="sec-sub">Have an opportunity or just want to say hello? My inbox is always open!</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div><p class="ci-label">Email</p><a href="mailto:raihanshariffworkspace@gmail.com" class="ci-val">raihanshariffworkspace@gmail.com</a></div>
+            </div>
+
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div><p class="ci-label">GitHub</p><a href="https://github.com/raihanshrff" target="_blank" class="ci-val">github.com/raihanshrff</a></div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+              <div><p class="ci-label">LinkedIn</p><a href="https://linkedin.com/in/raihan-shariff" target="_blank" class="ci-val">linkedin.com/in/raihan-shariff</a></div>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form reveal">
+            <div class="form-row">
+              <div class="fg">
+                <label for="from_name">Your Name</label>
+                <input type="text" id="from_name" name="from_name" placeholder="John Doe" required />
+              </div>
+              <div class="fg">
+                <label for="from_email">Your Email</label>
+                <input type="email" id="from_email" name="from_email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Regarding an opportunity..." />
+            </div>
+            <div class="fg">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span id="btnLoad" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; Built by <span class="footer-name">Raihan Shariff</span> &mdash; 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/raihanshrff"           target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/raihan-shariff"   target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:raihanshariffworkspace@gmail.com"                   aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
